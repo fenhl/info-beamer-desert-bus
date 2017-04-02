@@ -12,7 +12,12 @@ util.data_mapper{
 }
 
 function hand(time)
-    local size = WIDTH / 2.5
+    local size
+    if WIDTH < HEIGHT then
+        size = WIDTH / 2.5
+    else
+        size = HEIGHT / 2.5
+    end
     local strength = 5
     local angle = (time % 86400) * 360 / 86400 + 90
     gl.pushMatrix()
