@@ -1,2 +1,1 @@
-# info-beamer-desert-bus
-An info-beamer plugin displaying the Desert Bus for Hope shift clock
+This is an [info-beamer](https://info-beamer.com/) plugin displaying the [Desert Bus for Hope](https://desertbus.org/) shift clock.
