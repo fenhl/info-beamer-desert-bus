@@ -2,6 +2,7 @@
 
 import datetime
 import socket
+import time
 
 MOONBASE_STANDARD_TIME = datetime.timezone(-datetime.timedelta(hours=8))
 
@@ -11,3 +12,6 @@ def send(mode, cmd, arg):
 
 if __name__ == '__main__':
     send('time', 'set', '{:%s}'.format(datetime.datetime.now(tz=MOONBASE_STANDARD_TIME)))
+    while True:
+        # keep script alive so info-beamer can be quit using ^C
+        time.sleep(1)
