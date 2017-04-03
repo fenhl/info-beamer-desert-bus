@@ -30,18 +30,19 @@ end
 function node.render()
     -- Dawn Guard quadrant
     resource.create_colored_texture(0.945, 0.51, 0.129, 1):draw(0, 0, WIDTH / 2, HEIGHT / 2)
-    --TODO stripe
+    resource.create_colored_texture(0.765, 0.42, 0.157, 1):draw(0, HEIGHT / 3, WIDTH / 2, HEIGHT / 2)
     --TODO logo
     -- Alpha Flight quadrant
     resource.create_colored_texture(0.745, 0.137, 0.161, 1):draw(WIDTH / 2, 0, WIDTH, HEIGHT / 2)
-    --TODO stripe
+    resource.create_colored_texture(0.459, 0.067, 0.075, 1):draw(WIDTH * 0.825, 0, WIDTH * 0.925, HEIGHT / 2)
     --TODO logo
     -- Night Watch quadrant
     resource.create_colored_texture(0.035, 0.451, 0.729, 1):draw(WIDTH / 2, HEIGHT / 2, WIDTH, HEIGHT)
     --TODO logo
     -- Zeta Shift quadrant
     resource.create_colored_texture(0.376, 0.212, 0.537, 1):draw(0, HEIGHT / 2, WIDTH / 2, HEIGHT)
-    --TODO stripes
+    resource.create_colored_texture(0.573, 0.388, 0.667, 1):draw(0, HEIGHT / 2, WIDTH / 20, HEIGHT)
+    resource.create_colored_texture(0.573, 0.388, 0.667, 1):draw(WIDTH * 9 / 20, HEIGHT / 2, WIDTH / 2, HEIGHT)
     --TODO logo
     -- hand
     hand(base_time + sys.now())
