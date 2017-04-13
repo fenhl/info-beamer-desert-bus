@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo "$(which info-beamer)" . &
+info-beamer . &
 
-sleep 1 &&
+sleep 1
 ./update.py
